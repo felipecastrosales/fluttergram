@@ -9,7 +9,7 @@ class PostWidget extends StatelessWidget {
     final desktop = ResponsiveWrapper.of(context).isDesktop;
 
     return Padding(
-      padding: EdgeInsets.symmetric(vertical: desktop ? 35 : 0),
+      padding: EdgeInsets.symmetric(vertical: desktop ? 15 : 0),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
@@ -81,7 +81,7 @@ class PostWidget extends StatelessWidget {
                       fontSize: 15,
                       fontWeight: FontWeight.w600,
                       color: Colors.white,
-                      letterSpacing: 1.05
+                      letterSpacing: 1.05,
                     ),
                   ),
                 ),
@@ -89,10 +89,10 @@ class PostWidget extends StatelessWidget {
                   '16 MINUTES AGO',
                   style: GoogleFonts.lato(
                     textStyle: TextStyle(
-                      fontSize: 15,
+                      fontSize: 12.5,
                       fontWeight: FontWeight.w600,
                       color: Colors.grey[300],
-                      letterSpacing: 1.1
+                      letterSpacing: 1.1,
                     ),
                   ),
                 ),
@@ -100,6 +100,7 @@ class PostWidget extends StatelessWidget {
             ),
           ),
           if(desktop) ... [
+            Padding(padding: const EdgeInsets.only(top: 10)),
             Divider(color: Colors.white, height: 0.15),
             Row(
               children: [
