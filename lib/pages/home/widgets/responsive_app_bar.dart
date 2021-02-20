@@ -48,7 +48,7 @@ class ResponsiveAppBar extends StatelessWidget {
                         borderRadius: BorderRadius.circular(10),
                         border: Border.all(color: Colors.white),
                         boxShadow: [
-                          BoxShadow(color: const Color(0XFF323232)),
+                          BoxShadow(color: Colors.black87),
                         ],
                       ),
                       child: Row(
