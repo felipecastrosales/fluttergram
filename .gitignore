@@ -2,6 +2,11 @@
 test
 integration_test
 
+#firebase
+.firebaserc
+firebase.json
+.firebase
+
 # Miscellaneous
 *.class
 *.lock
