@@ -32,7 +32,7 @@ class StoryCircle extends StatelessWidget {
             child: CircleAvatar(
               radius: 30,
               backgroundImage: NetworkImage(
-                'https://media-exp1.licdn.com/dms/image/C4D03AQHLxFQ5UDk81g/profile-displayphoto-shrink_800_800/0/1602549169207?e=1619049600&v=beta&t=oK_cLX_v14D8xmc-mJqzS_lE1OiSkYTIBOF6IQwE-Wg'
+                'https://avatars.githubusercontent.com/u/59374587'
               ),
             ),
           ),
