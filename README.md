@@ -1,8 +1,8 @@
 <p align="center">
-      <img src="" width="" alt=""/>
+      <img src="assets/fluttergram.png" width="100px" alt="Fluttergram"/>
 </p>
 
-<h1 align="center">Fluttergram</h1>
+<h1 align="center"><a href="https://fluttergramclone.web.app/#/" target="_blank">Fluttergram</a></h1>
 
 <h2 align="center">Topics 📋</h2>
 
@@ -20,19 +20,42 @@
 ---
 
 <h2 align="center">About 📖</h2>
-   
+
+<p align="center">
+   A practical and simples Instagram Clone developed with <a href="https://pub.dev/packages/responsive_framework" target="_blank">responsive_framework</a>, an incredible package.<br>
+   This project using this package gave me a lot of productivity regarding responsiveness in Flutter, because it adapts my UI for each type of screen, without so much concern.<br>
+   If you want to learn how to do a similar one, access the course: <a href="https://www.udemy.com/course/responsividade-flutter/?referralCode=A3737FD68BCAFEFCE3C8" target="_blank">Responsiveness in the Flutter | Mobile, Tablet, Web e Desktop</a>, of which I am a teaching instructor! I hope you enjoy!
+</p>
+
 
 ---
 
-<h2 align="center">Preview 📱</h2>
+<h2 align="center"><a href="https://fluttergramclone.web.app/#/" target="_blank">Previews</a> 📱💻🖥</h2>
+
+   > * See in best quality:
+   > * <a href="https://fluttergramclone.web.app/" target="_blank">LIVE ON Firebase Hosting</a>
 
 ---
 
 <h2 align="center">Functionalities 🛠️</h2>
 
+- With just one code you can generate applications for:
+  -  Mobile 📱
+  -  Tablets 📱 
+  -  Web 💻
+  -  Desktop 🖥️
+- With this project, you can see a simple and practical example of how it works 😏
+
 ---
 
 <h2 align="center">Challenges and Learnings along the way 🤯</h2>
+
+<p>
+   That was my second experience creating a fully responsive Flutter Aplication.<br>
+   This time, I used responsive_framework, of which I had a very high productivity, and I really liked it.<br>
+   Again, as in the previous project, I hosted the application on Firebase Hosting, and this time, without any difficulty and challenge, it was simple and practical.
+   Once again I learned too much from Responsivity!!! 📱💻🖥
+</p>
 
 ---
 

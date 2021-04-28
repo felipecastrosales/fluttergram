@@ -21,7 +21,7 @@ class PostWidget extends StatelessWidget {
                   radius: 20, 
                   backgroundColor: Colors.transparent,
                   backgroundImage: NetworkImage(
-                    'https://media-exp1.licdn.com/dms/image/C4D03AQHLxFQ5UDk81g/profile-displayphoto-shrink_800_800/0/1602549169207?e=1619049600&v=beta&t=oK_cLX_v14D8xmc-mJqzS_lE1OiSkYTIBOF6IQwE-Wg'
+                    'https://avatars.githubusercontent.com/u/59374587?v=4'
                   ),
                 ),
                 const SizedBox(width: 15),
@@ -45,7 +45,7 @@ class PostWidget extends StatelessWidget {
             ),
           ),
           Image.network(
-            'https://media-exp1.licdn.com/dms/image/C4D03AQHLxFQ5UDk81g/profile-displayphoto-shrink_800_800/0/1602549169207?e=1619049600&v=beta&t=oK_cLX_v14D8xmc-mJqzS_lE1OiSkYTIBOF6IQwE-Wg'
+            'https://avatars.githubusercontent.com/u/59374587'
           ),
           Padding(
             padding: const EdgeInsets.all(5),
@@ -118,6 +118,7 @@ class PostWidget extends StatelessWidget {
                     ),
                   )
                 ),
+                // ignore: deprecated_member_use
                 FlatButton(
                   onPressed: () {},
                   textColor: Colors.white,
