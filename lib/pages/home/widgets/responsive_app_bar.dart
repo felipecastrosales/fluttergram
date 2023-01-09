@@ -57,8 +57,8 @@ class ResponsiveAppBar extends StatelessWidget {
                           const SizedBox(width: 5),
                           Expanded(
                             child: TextField(
-                              style: TextStyle(
-                                fontSize: 15, color: Colors.white),
+                              style:
+                                  TextStyle(fontSize: 15, color: Colors.white),
                               decoration: InputDecoration(
                                 border: InputBorder.none,
                                 isCollapsed: true,

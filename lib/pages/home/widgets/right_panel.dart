@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
-import 'package:google_fonts/google_fonts.dart';
 
+import 'package:google_fonts/google_fonts.dart';
 import 'package:responsive_framework/responsive_value.dart';
 import 'package:responsive_framework/responsive_wrapper.dart';
 
@@ -38,22 +38,20 @@ class RightPanel extends StatelessWidget {
                         'felipecastrosales',
                         style: GoogleFonts.lato(
                           textStyle: TextStyle(
-                            fontSize: 12.5,
-                            fontWeight: FontWeight.w800,
-                            color: Colors.white,
-                            letterSpacing: 1.1
-                          ),
+                              fontSize: 12.5,
+                              fontWeight: FontWeight.w800,
+                              color: Colors.white,
+                              letterSpacing: 1.1),
                         ),
                       ),
                       Text(
                         'Felipe Sales',
                         style: GoogleFonts.lato(
                           textStyle: TextStyle(
-                            fontSize: 12.5,
-                            fontWeight: FontWeight.w600,
-                            color: Colors.grey[300],
-                            letterSpacing: 1.1
-                          ),
+                              fontSize: 12.5,
+                              fontWeight: FontWeight.w600,
+                              color: Colors.grey[300],
+                              letterSpacing: 1.1),
                         ),
                       ),
                     ],
@@ -62,16 +60,15 @@ class RightPanel extends StatelessWidget {
                 MouseRegion(
                   cursor: SystemMouseCursors.click,
                   child: GestureDetector(
-                    onTap: (){},
+                    onTap: () {},
                     child: Text(
                       'Exit',
                       style: GoogleFonts.lato(
                         textStyle: TextStyle(
-                          fontSize: 12.5,
-                          fontWeight: FontWeight.w800,
-                          color: Colors.blueAccent,
-                          letterSpacing: 1.1
-                        ),
+                            fontSize: 12.5,
+                            fontWeight: FontWeight.w800,
+                            color: Colors.blueAccent,
+                            letterSpacing: 1.1),
                       ),
                     ),
                   ),
@@ -86,11 +83,10 @@ class RightPanel extends StatelessWidget {
                   'Suggestions for you',
                   style: GoogleFonts.lato(
                     textStyle: TextStyle(
-                      fontSize: 12.5,
-                      fontWeight: FontWeight.w800,
-                      color: Colors.grey[500],
-                      letterSpacing: 1.1
-                    ),
+                        fontSize: 12.5,
+                        fontWeight: FontWeight.w800,
+                        color: Colors.grey[500],
+                        letterSpacing: 1.1),
                   ),
                 ),
                 MouseRegion(
@@ -101,11 +97,10 @@ class RightPanel extends StatelessWidget {
                       'View more',
                       style: GoogleFonts.lato(
                         textStyle: TextStyle(
-                          fontSize: 12.5,
-                          fontWeight: FontWeight.w800,
-                          color: Colors.white,
-                          letterSpacing: 1.1
-                        ),
+                            fontSize: 12.5,
+                            fontWeight: FontWeight.w800,
+                            color: Colors.white,
+                            letterSpacing: 1.1),
                       ),
                     ),
                   ),

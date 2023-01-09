@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-import 'package:flutter/rendering.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class SuggestionItem extends StatelessWidget {
@@ -26,22 +25,20 @@ class SuggestionItem extends StatelessWidget {
                   'felipecastrosales',
                   style: GoogleFonts.lato(
                     textStyle: TextStyle(
-                      fontSize: 12.5,
-                      fontWeight: FontWeight.w800,
-                      color: Colors.white,
-                      letterSpacing: 1.1
-                    ),
+                        fontSize: 12.5,
+                        fontWeight: FontWeight.w800,
+                        color: Colors.white,
+                        letterSpacing: 1.1),
                   ),
                 ),
                 Text(
                   'Felipe Sales',
                   style: GoogleFonts.lato(
                     textStyle: TextStyle(
-                      fontSize: 12.5,
-                      fontWeight: FontWeight.w600,
-                      color: Colors.grey[300],
-                      letterSpacing: 1.1
-                    ),
+                        fontSize: 12.5,
+                        fontWeight: FontWeight.w600,
+                        color: Colors.grey[300],
+                        letterSpacing: 1.1),
                   ),
                 ),
               ],
@@ -55,11 +52,10 @@ class SuggestionItem extends StatelessWidget {
                 'Follow',
                 style: GoogleFonts.lato(
                   textStyle: TextStyle(
-                    fontSize: 12,
-                    fontWeight: FontWeight.w800,
-                    color: Colors.blueAccent,
-                    letterSpacing: 1.1
-                  ),
+                      fontSize: 12,
+                      fontWeight: FontWeight.w800,
+                      color: Colors.blueAccent,
+                      letterSpacing: 1.1),
                 ),
               ),
             ),
