@@ -4,6 +4,8 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:responsive_framework/responsive_wrapper.dart';
 
 class PostWidget extends StatelessWidget {
+  const PostWidget({super.key});
+
   @override
   Widget build(BuildContext context) {
     final desktop = ResponsiveWrapper.of(context).isDesktop;
@@ -17,27 +19,32 @@ class PostWidget extends StatelessWidget {
             padding: const EdgeInsets.all(15),
             child: Row(
               children: [
-                CircleAvatar(
+                const CircleAvatar(
                   radius: 20,
                   backgroundColor: Colors.transparent,
                   backgroundImage: NetworkImage(
-                      'https://avatars.githubusercontent.com/u/59374587?v=4'),
+                    'https://avatars.githubusercontent.com/u/59374587?v=4',
+                  ),
                 ),
                 const SizedBox(width: 15),
                 Expanded(
                   child: Text(
                     'felipecastrosales',
                     style: GoogleFonts.lato(
-                      textStyle: TextStyle(
-                          fontSize: 15,
-                          fontWeight: FontWeight.w600,
-                          color: Colors.white,
-                          letterSpacing: 1.1),
+                      textStyle: const TextStyle(
+                        fontSize: 15,
+                        fontWeight: FontWeight.w600,
+                        color: Colors.white,
+                        letterSpacing: 1.1,
+                      ),
                     ),
                   ),
                 ),
                 GestureDetector(
-                  child: Icon(Icons.more_horiz_sharp, color: Colors.white),
+                  child: const Icon(
+                    Icons.more_horiz_sharp,
+                    color: Colors.white,
+                  ),
                 ),
               ],
             ),
@@ -48,32 +55,48 @@ class PostWidget extends StatelessWidget {
             child: Row(
               children: [
                 IconButton(
-                    icon: Icon(Icons.favorite_border, color: Colors.white),
-                    onPressed: () {}),
+                  icon: const Icon(
+                    Icons.favorite_border,
+                    color: Colors.white,
+                  ),
+                  onPressed: () {},
+                ),
                 const SizedBox(width: 5),
                 IconButton(
-                    icon: Icon(Icons.messenger_outline, color: Colors.white),
-                    onPressed: () {}),
+                  icon: const Icon(
+                    Icons.messenger_outline,
+                    color: Colors.white,
+                  ),
+                  onPressed: () {},
+                ),
                 const SizedBox(width: 5),
                 IconButton(
-                    icon: Icon(Icons.send, color: Colors.white),
-                    onPressed: () {}),
+                  icon: const Icon(
+                    Icons.send,
+                    color: Colors.white,
+                  ),
+                  onPressed: () {},
+                ),
                 Expanded(child: Container()),
                 IconButton(
-                    icon: Icon(Icons.bookmark_border, color: Colors.white),
-                    onPressed: () {}),
+                  icon: const Icon(
+                    Icons.bookmark_border,
+                    color: Colors.white,
+                  ),
+                  onPressed: () {},
+                ),
               ],
             ),
           ),
           Padding(
-            padding: EdgeInsets.only(left: 10, right: 5),
+            padding: const EdgeInsets.only(left: 10, right: 5),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
                   'Liked by felipecastrosales and 10 others',
                   style: GoogleFonts.lato(
-                    textStyle: TextStyle(
+                    textStyle: const TextStyle(
                       fontSize: 15,
                       fontWeight: FontWeight.w600,
                       color: Colors.white,
@@ -96,26 +119,29 @@ class PostWidget extends StatelessWidget {
             ),
           ),
           if (desktop) ...[
-            Padding(padding: const EdgeInsets.only(top: 10)),
-            Divider(color: Colors.white, height: 0.15),
+            const SizedBox(height: 10),
+            const Divider(color: Colors.white, height: 0.15),
             Row(
               children: [
                 Expanded(
                     child: Padding(
                   padding: const EdgeInsets.fromLTRB(15, 20, 0, 25),
                   child: TextFormField(
-                    style: TextStyle(color: Colors.white),
-                    decoration: InputDecoration(
+                    style: const TextStyle(color: Colors.white),
+                    decoration: const InputDecoration(
                       border: InputBorder.none,
                       isCollapsed: true,
                       hintText: 'Add a comment',
-                      hintStyle: TextStyle(fontSize: 15, color: Colors.white),
+                      hintStyle: TextStyle(
+                        fontSize: 15,
+                        color: Colors.white,
+                      ),
                     ),
                   ),
                 )),
                 TextButton(
                   onPressed: () {},
-                  child: Text(
+                  child: const Text(
                     'Publish',
                     style: TextStyle(color: Colors.white),
                   ),

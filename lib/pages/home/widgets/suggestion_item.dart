@@ -3,18 +3,20 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class SuggestionItem extends StatelessWidget {
+  const SuggestionItem({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.fromLTRB(5, 5, 0, 5),
       child: Row(
         children: [
-          CircleAvatar(
+          const CircleAvatar(
             radius: 15,
+            backgroundColor: Colors.transparent,
             backgroundImage: NetworkImage(
               'https://avatars.githubusercontent.com/u/59374587',
             ),
-            backgroundColor: Colors.transparent,
           ),
           const SizedBox(width: 15),
           Expanded(
@@ -24,21 +26,23 @@ class SuggestionItem extends StatelessWidget {
                 Text(
                   'felipecastrosales',
                   style: GoogleFonts.lato(
-                    textStyle: TextStyle(
-                        fontSize: 12.5,
-                        fontWeight: FontWeight.w800,
-                        color: Colors.white,
-                        letterSpacing: 1.1),
+                    textStyle: const TextStyle(
+                      fontSize: 12.5,
+                      fontWeight: FontWeight.w800,
+                      color: Colors.white,
+                      letterSpacing: 1.1,
+                    ),
                   ),
                 ),
                 Text(
                   'Felipe Sales',
                   style: GoogleFonts.lato(
                     textStyle: TextStyle(
-                        fontSize: 12.5,
-                        fontWeight: FontWeight.w600,
-                        color: Colors.grey[300],
-                        letterSpacing: 1.1),
+                      fontSize: 12.5,
+                      fontWeight: FontWeight.w600,
+                      color: Colors.grey[300],
+                      letterSpacing: 1.1,
+                    ),
                   ),
                 ),
               ],
@@ -51,11 +55,12 @@ class SuggestionItem extends StatelessWidget {
               child: Text(
                 'Follow',
                 style: GoogleFonts.lato(
-                  textStyle: TextStyle(
-                      fontSize: 12,
-                      fontWeight: FontWeight.w800,
-                      color: Colors.blueAccent,
-                      letterSpacing: 1.1),
+                  textStyle: const TextStyle(
+                    fontSize: 12,
+                    fontWeight: FontWeight.w800,
+                    color: Colors.blueAccent,
+                    letterSpacing: 1.1,
+                  ),
                 ),
               ),
             ),

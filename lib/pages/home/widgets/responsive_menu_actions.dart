@@ -4,6 +4,8 @@ import 'package:responsive_framework/responsive_value.dart';
 import 'package:responsive_framework/responsive_wrapper.dart';
 
 class ResponsiveMenuActions extends StatelessWidget {
+  const ResponsiveMenuActions({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Row(
@@ -11,22 +13,35 @@ class ResponsiveMenuActions extends StatelessWidget {
       children: [
         ResponsiveVisibility(
           visible: false,
-          visibleWhen: [
+          visibleWhen: const [
             Condition.smallerThan(name: TABLET),
           ],
-          child: IconButton(icon: Icon(Icons.search), onPressed: () {}),
+          child: IconButton(
+            icon: const Icon(Icons.search),
+            onPressed: () {},
+          ),
         ),
         const SizedBox(width: 5),
-        IconButton(icon: Icon(Icons.home), onPressed: () {}),
+        IconButton(
+          icon: const Icon(Icons.home),
+          onPressed: () {},
+        ),
         const SizedBox(width: 5),
-        IconButton(icon: Icon(Icons.send), onPressed: () {}),
+        IconButton(
+          icon: const Icon(Icons.send),
+          onPressed: () {},
+        ),
         const SizedBox(width: 5),
-        IconButton(icon: Icon(Icons.favorite_border), onPressed: () {}),
+        IconButton(
+          icon: const Icon(Icons.favorite_border),
+          onPressed: () {},
+        ),
         const SizedBox(width: 5),
-        CircleAvatar(
+        const CircleAvatar(
           radius: 15,
-          backgroundImage:
-              NetworkImage('https://avatars.githubusercontent.com/u/59374587'),
+          backgroundImage: NetworkImage(
+            'https://avatars.githubusercontent.com/u/59374587',
+          ),
         ),
       ],
     );

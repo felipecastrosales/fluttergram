@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class StoryCircle extends StatelessWidget {
+  const StoryCircle({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -13,12 +15,12 @@ class StoryCircle extends StatelessWidget {
           decoration: BoxDecoration(
             shape: BoxShape.circle,
             gradient: LinearGradient(
+              begin: Alignment.centerLeft,
+              end: Alignment.centerRight,
               colors: [
                 Colors.green,
                 Colors.greenAccent[700] ?? Colors.green,
               ],
-              begin: Alignment.centerLeft,
-              end: Alignment.centerRight,
             ),
           ),
           alignment: Alignment.center,
@@ -33,7 +35,8 @@ class StoryCircle extends StatelessWidget {
             child: const CircleAvatar(
               radius: 30,
               backgroundImage: NetworkImage(
-                  'https://avatars.githubusercontent.com/u/59374587'),
+                'https://avatars.githubusercontent.com/u/59374587',
+              ),
             ),
           ),
         ),
@@ -41,10 +44,11 @@ class StoryCircle extends StatelessWidget {
           'felipecastrosales',
           style: GoogleFonts.lato(
             textStyle: const TextStyle(
-                fontSize: 10,
-                fontWeight: FontWeight.w600,
-                color: Colors.white,
-                letterSpacing: 1.1),
+              fontSize: 10,
+              fontWeight: FontWeight.w600,
+              color: Colors.white,
+              letterSpacing: 1.1,
+            ),
           ),
         ),
       ],

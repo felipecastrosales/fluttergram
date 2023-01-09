@@ -6,10 +6,17 @@ import 'package:responsive_framework/responsive_framework.dart';
 import 'pages/home/home_page.dart';
 
 void main() {
-  runApp(DevicePreview(enabled: true, builder: (_) => MyApp()));
+  runApp(
+    DevicePreview(
+      enabled: true,
+      builder: (_) => const FluttergramApp(),
+    ),
+  );
 }
 
-class MyApp extends StatelessWidget {
+class FluttergramApp extends StatelessWidget {
+  const FluttergramApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -36,7 +43,7 @@ class MyApp extends StatelessWidget {
         );
         return DevicePreview.appBuilder(context, responsive);
       },
-      home: HomePage(),
+      home: const HomePage(),
     );
   }
 }
