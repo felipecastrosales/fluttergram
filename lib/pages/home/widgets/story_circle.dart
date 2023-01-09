@@ -15,7 +15,7 @@ class StoryCircle extends StatelessWidget {
             gradient: LinearGradient(
               colors: [
                 Colors.green,
-                Colors.greenAccent[700],
+                Colors.greenAccent[700] ?? Colors.green,
               ],
               begin: Alignment.centerLeft,
               end: Alignment.centerRight,
@@ -25,12 +25,12 @@ class StoryCircle extends StatelessWidget {
           child: Container(
             height: 65,
             width: 65,
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               shape: BoxShape.circle,
               color: Colors.black87,
             ),
             alignment: Alignment.center,
-            child: CircleAvatar(
+            child: const CircleAvatar(
               radius: 30,
               backgroundImage: NetworkImage(
                   'https://avatars.githubusercontent.com/u/59374587'),
@@ -40,7 +40,7 @@ class StoryCircle extends StatelessWidget {
         Text(
           'felipecastrosales',
           style: GoogleFonts.lato(
-            textStyle: TextStyle(
+            textStyle: const TextStyle(
                 fontSize: 10,
                 fontWeight: FontWeight.w600,
                 color: Colors.white,
