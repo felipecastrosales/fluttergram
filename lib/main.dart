@@ -16,7 +16,9 @@ void main() {
 }
 
 class FluttergramApp extends StatelessWidget {
-  const FluttergramApp({super.key});
+  const FluttergramApp({
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {
