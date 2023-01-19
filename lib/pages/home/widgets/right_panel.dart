@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
-import 'package:google_fonts/google_fonts.dart';
 
+import 'package:google_fonts/google_fonts.dart';
 import 'package:responsive_framework/responsive_value.dart';
 import 'package:responsive_framework/responsive_wrapper.dart';
 
 import 'suggestion_item.dart';
 
 class RightPanel extends StatelessWidget {
+  const RightPanel({super.key});
   @override
   Widget build(BuildContext context) {
     return ResponsiveVisibility(
       visible: false,
-      visibleWhen: [
+      visibleWhen: const [
         Condition.largerThan(name: TABLET),
       ],
       child: Container(
@@ -22,7 +22,7 @@ class RightPanel extends StatelessWidget {
           children: [
             Row(
               children: [
-                CircleAvatar(
+                const CircleAvatar(
                   radius: 30,
                   backgroundImage: NetworkImage(
                     'https://avatars.githubusercontent.com/u/59374587',
@@ -37,11 +37,11 @@ class RightPanel extends StatelessWidget {
                       Text(
                         'felipecastrosales',
                         style: GoogleFonts.lato(
-                          textStyle: TextStyle(
+                          textStyle: const TextStyle(
                             fontSize: 12.5,
                             fontWeight: FontWeight.w800,
                             color: Colors.white,
-                            letterSpacing: 1.1
+                            letterSpacing: 1.1,
                           ),
                         ),
                       ),
@@ -52,7 +52,7 @@ class RightPanel extends StatelessWidget {
                             fontSize: 12.5,
                             fontWeight: FontWeight.w600,
                             color: Colors.grey[300],
-                            letterSpacing: 1.1
+                            letterSpacing: 1.1,
                           ),
                         ),
                       ),
@@ -62,15 +62,15 @@ class RightPanel extends StatelessWidget {
                 MouseRegion(
                   cursor: SystemMouseCursors.click,
                   child: GestureDetector(
-                    onTap: (){},
+                    onTap: () {},
                     child: Text(
                       'Exit',
                       style: GoogleFonts.lato(
-                        textStyle: TextStyle(
+                        textStyle: const TextStyle(
                           fontSize: 12.5,
                           fontWeight: FontWeight.w800,
                           color: Colors.blueAccent,
-                          letterSpacing: 1.1
+                          letterSpacing: 1.1,
                         ),
                       ),
                     ),
@@ -89,7 +89,7 @@ class RightPanel extends StatelessWidget {
                       fontSize: 12.5,
                       fontWeight: FontWeight.w800,
                       color: Colors.grey[500],
-                      letterSpacing: 1.1
+                      letterSpacing: 1.1,
                     ),
                   ),
                 ),
@@ -100,11 +100,11 @@ class RightPanel extends StatelessWidget {
                     child: Text(
                       'View more',
                       style: GoogleFonts.lato(
-                        textStyle: TextStyle(
+                        textStyle: const TextStyle(
                           fontSize: 12.5,
                           fontWeight: FontWeight.w800,
                           color: Colors.white,
-                          letterSpacing: 1.1
+                          letterSpacing: 1.1,
                         ),
                       ),
                     ),
@@ -113,9 +113,9 @@ class RightPanel extends StatelessWidget {
               ],
             ),
             const SizedBox(height: 10),
-            SuggestionItem(),
-            SuggestionItem(),
-            SuggestionItem(),
+            const SuggestionItem(),
+            const SuggestionItem(),
+            const SuggestionItem(),
           ],
         ),
       ),

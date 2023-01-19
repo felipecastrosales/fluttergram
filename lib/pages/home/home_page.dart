@@ -6,22 +6,24 @@ import 'widgets/right_panel.dart';
 import 'widgets/stories_list.dart';
 
 class HomePage extends StatelessWidget {
+  const HomePage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: PreferredSize(
+      appBar: const PreferredSize(
         preferredSize: Size(double.infinity, 55),
         child: ResponsiveAppBar(),
       ),
       body: Align(
         alignment: Alignment.center,
         child: ConstrainedBox(
-          constraints: BoxConstraints(maxWidth: 1000),
+          constraints: const BoxConstraints(maxWidth: 1000),
           child: Row(
             children: [
               Expanded(
                 child: ListView(
-                  children: [
+                  children: const [
                     StoriesList(),
                     PostWidget(),
                     PostWidget(),
@@ -29,7 +31,7 @@ class HomePage extends StatelessWidget {
                   ],
                 ),
               ),
-              RightPanel(),
+              const RightPanel(),
             ],
           ),
         ),
