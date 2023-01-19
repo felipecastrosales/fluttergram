@@ -19,7 +19,7 @@ class StoriesList extends StatelessWidget {
         padding: const EdgeInsets.symmetric(horizontal: 16),
         itemCount: 15,
         separatorBuilder: (_, __) => const SizedBox(width: 10),
-        itemBuilder: (_, i) => const StoryCircle(),
+        itemBuilder: (_, __) => const StoryCircle(),
       ),
     );
   }

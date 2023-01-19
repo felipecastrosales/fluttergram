@@ -77,7 +77,7 @@ class PostWidget extends StatelessWidget {
                   ),
                   onPressed: () {},
                 ),
-                Expanded(child: Container()),
+                const Expanded(child: SizedBox()),
                 IconButton(
                   icon: const Icon(
                     Icons.bookmark_border,
