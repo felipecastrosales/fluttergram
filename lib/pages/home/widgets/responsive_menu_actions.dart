@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:responsive_framework/responsive_value.dart';
-import 'package:responsive_framework/responsive_wrapper.dart';
+import 'package:responsive_framework/responsive_framework.dart';
 
 class ResponsiveMenuActions extends StatelessWidget {
   const ResponsiveMenuActions({super.key});
@@ -13,7 +12,7 @@ class ResponsiveMenuActions extends StatelessWidget {
       children: [
         ResponsiveVisibility(
           visible: false,
-          visibleWhen: const [
+          visibleConditions: const [
             Condition.smallerThan(name: TABLET),
           ],
           child: IconButton(

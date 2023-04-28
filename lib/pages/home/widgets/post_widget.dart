@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 
 import 'package:google_fonts/google_fonts.dart';
-import 'package:responsive_framework/responsive_wrapper.dart';
+import 'package:responsive_framework/responsive_framework.dart';
 
 class PostWidget extends StatelessWidget {
   const PostWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final desktop = ResponsiveWrapper.of(context).isDesktop;
+    final desktop = ResponsiveBreakpoints.of(context).isDesktop;
 
     return Padding(
       padding: EdgeInsets.symmetric(vertical: desktop ? 15 : 0),

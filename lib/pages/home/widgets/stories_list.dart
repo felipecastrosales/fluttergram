@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:responsive_framework/responsive_wrapper.dart';
+import 'package:responsive_framework/responsive_framework.dart';
 
 import 'story_circle.dart';
 
@@ -9,7 +9,7 @@ class StoriesList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final mobile = ResponsiveWrapper.of(context).isMobile;
+    final mobile = ResponsiveBreakpoints.of(context).isMobile;
 
     return Container(
       height: 110,

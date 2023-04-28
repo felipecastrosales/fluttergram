@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:google_fonts/google_fonts.dart';
-import 'package:responsive_framework/responsive_value.dart';
-import 'package:responsive_framework/responsive_wrapper.dart';
+import 'package:responsive_framework/responsive_framework.dart';
 
 import 'responsive_menu_actions.dart';
 
@@ -34,7 +33,7 @@ class ResponsiveAppBar extends StatelessWidget {
               ),
               ResponsiveVisibility(
                 visible: false,
-                visibleWhen: const [
+                visibleConditions: const [
                   Condition.largerThan(name: MOBILE),
                 ],
                 child: Expanded(
@@ -80,7 +79,7 @@ class ResponsiveAppBar extends StatelessWidget {
               ),
               const ResponsiveVisibility(
                 visible: false,
-                visibleWhen: [
+                visibleConditions: [
                   Condition.largerThan(name: MOBILE),
                 ],
                 replacement: ResponsiveMenuActions(),
