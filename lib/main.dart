@@ -25,13 +25,16 @@ class FluttergramApp extends StatelessWidget {
     return MaterialApp(
       title: 'Fluttergram',
       home: const HomePage(),
-      useInheritedMediaQuery: true,
       locale: DevicePreview.locale(context),
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         visualDensity: VisualDensity.adaptivePlatformDensity,
         primarySwatch: Colors.blue,
         scaffoldBackgroundColor: const Color(0XFF0A0A0A),
+        appBarTheme: const AppBarTheme(
+          backgroundColor: Color(0XFF0A0A0A),
+          foregroundColor: Colors.white,
+        ),
       ),
       builder: (context, child) {
         return DevicePreview.appBuilder(
