@@ -24,33 +24,32 @@ class FluttergramApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Fluttergram',
-      useInheritedMediaQuery: true,
+      home: const HomePage(),
       locale: DevicePreview.locale(context),
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         visualDensity: VisualDensity.adaptivePlatformDensity,
         primarySwatch: Colors.blue,
         scaffoldBackgroundColor: const Color(0XFF0A0A0A),
+        appBarTheme: const AppBarTheme(
+          backgroundColor: Color(0XFF0A0A0A),
+          foregroundColor: Colors.white,
+        ),
       ),
       builder: (context, child) {
-        final responsive = ResponsiveWrapper.builder(
-          // ClampingScrollWrapper.builder(context, child ?? const SizedBox()),
-          BouncingScrollWrapper.builder(context, child!),
-          // child,
-          defaultScale: true,
-          debugLog: true,
-          minWidth: 450,
-          maxWidth: 1200,
-          defaultName: MOBILE,
-          breakpoints: const [
-            ResponsiveBreakpoint.resize(450, name: MOBILE),
-            ResponsiveBreakpoint.resize(700, name: TABLET),
-            ResponsiveBreakpoint.resize(850, name: DESKTOP),
-          ],
+        return DevicePreview.appBuilder(
+          context,
+          ResponsiveBreakpoints.builder(
+            child: BouncingScrollWrapper.builder(context, child!),
+            debugLog: true,
+            breakpoints: const [
+              Breakpoint(start: 0, end: 450, name: MOBILE),
+              Breakpoint(start: 451, end: 700, name: TABLET),
+              Breakpoint(start: 701, end: 1200, name: DESKTOP),
+            ],
+          ),
         );
-        return DevicePreview.appBuilder(context, responsive);
       },
-      home: const HomePage(),
     );
   }
 }
